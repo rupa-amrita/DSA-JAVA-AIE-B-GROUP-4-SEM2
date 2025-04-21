@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Profile App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p id="loginMessage"></p>
+        </form>
+        <button id="createAccountBtn">Create an Account</button>
+    </div>
+
+    <!-- Signup Page -->
+    <div id="signupContainer" class="hidden">
+        <h2>Create Account</h2>
+        <form id="signupForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="text" id="phoneNumber" placeholder="Phone Number" required>
+            <input type="text" id="newUsername" placeholder="Username" required>
+            <input type="password" id="newPassword" placeholder="Create Password" required>
+            <button type="submit">Sign Up</button>
+            <p id="signupMessage"></p>
+        </form>
+        <button id="backToLoginBtn">Back to Login</button>
+    </div>
+
+    <!-- Main App -->
+    <div id="app" class="hidden">
+        <h2>Welcome to Dietary Profile App</h2>
+        <input type="number" id="calorieInput" placeholder="Enter Calories">
+        <button onclick="findDietPlan()">Get Meal Plan</button>
+        <div id="result"></div>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
